@@ -1,0 +1,30 @@
+body{
+  background: grey;
+}
+
+.gameboard{
+  border: solid #00ffff 1px;
+  background: black;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: fixed;
+  animate: pulse 1s ease infinite;
+  transition: transform 0.2s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

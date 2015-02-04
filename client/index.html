@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf=8">
-        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="stylesheet" href="bootstrap.css"/>
+        <link rel="stylesheet" href="styles/style.css"/>
 
         <!-- bower:js -->
         <!-- endbower -->
         <!-- firebase -->
         <script src="https://cdn.firebase.com/js/client/2.1.1/firebase.js"></script>
-        <script src="util/jquery.js"></script>
+        <script src="../bower_components/jquery/jquery.js"></script>
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="touch.js"></script>
@@ -21,8 +22,8 @@
     <body>
         <div class="header">
             <ul class="nav nav-pills pull-right">
-                <li><a href="/login">Login</a></li>
-                <li><a href="/data-view">Data View</a></li>
+                <li><a href="/newgame">New Game</a></li>
+                <!-- <li><a href="/data-view">Data View</a></li> -->
                 <li><a href="/logout">Logout</a></li>
             </ul>
         </div>
@@ -31,9 +32,9 @@
             <h1 ng-controller="scoreCtrl">Score: {{score}}</h1>
         </div>
 
-        <div class="encouragement"></div>
+        <!-- <div class="encouragement"></div> -->
 
-        <script>
+        <!-- <script>
             $(document).ready(function(){
                 console.log("Ready!")
                 var latestSwipeCount = Object.keys(JSON.parse(localStorage.swipeData)).length;
@@ -86,12 +87,12 @@
             })
 
 
-        </script>
+        </script> -->
 
 
 
 
-        <canvas id="canvas" width="1000" height="1600" style="border:solid black 1px; bottom:0; right:0; position:fixed; ">
+        <canvas id="canvas" width="1000" height="1600" class="gameboard" >
             Your browser does not support canvas elements.
 
         </canvas>

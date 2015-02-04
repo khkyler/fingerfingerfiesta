@@ -1,0 +1,18 @@
+
+body{
+  background-color: black;
+  color: #00ffff;
+}
+.login{
+  display: block;
+  width: 5em;
+  background-color: #00ffff;
+  border-radius: 20%;
+  margin: 0 auto;
+}
+div{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+

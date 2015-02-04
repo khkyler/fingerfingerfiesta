@@ -10,7 +10,7 @@ app.use('/swipez',express.static(__dirname + '/client'));
 app.use('/data-view',express.static(__dirname +'/app'));
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/app/views/main.html');
+  res.sendFile(__dirname + '/client/views/main.html');
 });
 
 //asks google for permissions of specific items defined in scopes
