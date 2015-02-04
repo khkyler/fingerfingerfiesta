@@ -7,7 +7,7 @@ var startup = function() {
   el.addEventListener("touchcancel", handleCancel, false);
   el.addEventListener("touchleave", handleEnd, false);
   el.addEventListener("touchmove", handleMove, false);
-  window.localStorage.touchUser = prompt("What's your name?");
+  //window.localStorage.touchUser = prompt("What's your name?");
   //log("initialized.");
 
   //Put text on the canvas

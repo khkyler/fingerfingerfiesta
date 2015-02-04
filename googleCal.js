@@ -28,7 +28,7 @@ passport.use(new GoogleStrategy({
   },
   function(token, refreshToken, profile, done) {
     ref.child('users').set(profile._json.id);
-    ref.child('users').child(profile._json.id).set({email: profile._json.email});
+    ref.child('users').child(profile._json.id).update({email: profile._json.email});
     //instantiate new calendar of logged user
     // google_calendar = new gcal.GoogleCalendar(token);
     // var currentUser = profile.displayName;
