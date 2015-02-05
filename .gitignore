@@ -10,6 +10,8 @@ Thumbs.db
 
 # NPM & Bower files #
 #####################
+/node_modules
+/client/bower_components
 /node_modules/**
 /client/components/**
 /app/bower_components/**
