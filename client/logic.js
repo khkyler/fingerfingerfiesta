@@ -1,4 +1,3 @@
-
 var Xcheckline = function(touchesStoreX, touchesStoreY, ctx){
   var beginX = touchesStoreX[0];
   var beginY = touchesStoreY[0];
@@ -16,7 +15,7 @@ var Xcheckline = function(touchesStoreX, touchesStoreY, ctx){
       // console.log(i, touchesStoreY[i])
       if(touchesStoreY[i] < maxHeight && touchesStoreY[i] > minHeight){
         // console.log("YAY!!!");
-        scoreMethods.addScore();
+        // scoreMethods.addScore();
         //below clears the line 
         ctx.clearRect(0,0,canvas.width,canvas.height);
         //check if line hits square HERE
@@ -26,16 +25,35 @@ var Xcheckline = function(touchesStoreX, touchesStoreY, ctx){
   }
 
 }
+var timeUp = false;
+
 var timer = function () {
+  timeUp = false;
+  var now = Date.now();
+  var end = now + 30000;
+  var didYouWin = true;
+  while(now < end){
+    now = Date.now();
+  }
   //if timer reaches zero
-    endLevel(); //pass it loss condition
+  didYouWin = false;
+  timeUp = true; 
+  console.log('Time Up!');
+  endLevel(didYouWin); //pass it loss condition
 };
 
-var endLevel = function () {
+var endLevel = function (didYouWin) {
   //render something depending on win state
   //clear screen
-  //call initLevel()
+  if(didYouWin){
+    alert('You Win! Get ready for the next level!');
+    initLevel("nextLevel");
+  }else{
+    alert('You Lose! Back to Level 1');
+    initLevel("level1");
+  }
 };
+
 
 var incrementScore = function () {
   //add to score

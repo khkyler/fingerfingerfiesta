@@ -264,7 +264,6 @@ var handleEnd = function(evt) {
   //check if line passes min length test
 
   //check to see if line is within x and y coordinates
-  myFunc();
   if(beginX<=mustBeLeftOf && endX>=mustBeRightOf){
     for(var i = 0; i < touchesStoreY.length; i++){
       // console.log(i, touchesStoreY[i])

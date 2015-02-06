@@ -10,7 +10,7 @@ body{
 }
 .gameboard{
   border: solid #00ffff 1px;
-  background: black;
+  background: grey;
   /*max-width: 100%;
   max-height: 100%;*/
   width: 960px;
