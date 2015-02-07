@@ -9,7 +9,7 @@ var levels = [
 {minScore: 70, color: "orange", timer: 2500, id:6},
 {minScore: 80, color: "red", timer: 2000, id:7}
 ]
-var time = 30;
+var time = 120;
 var didYouWin = true;
 
 // var getTime = function(){
