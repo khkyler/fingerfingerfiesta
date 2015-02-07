@@ -38,11 +38,11 @@
             <progress class="progressBar" max="100" value="0"></progress>
             <script>
                 var getTime = function(){
-                  $('h2').text("Time: " + time);
+                  $('h2').text('Time: ' + time);
                   time--;
                   if(time === 0){
                     location.reload();
-                    didYouWin = false;
+                    var didYouWin = false;
                     endLevel(didYouWin);
                     //stop timer
                   }
@@ -52,7 +52,7 @@
                 };
                 //on new level reset timer
                 
-                // timer();
+                timer();
                 //start timer
 
             </script>
