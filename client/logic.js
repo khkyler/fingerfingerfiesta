@@ -9,7 +9,7 @@ var levels = [
 {minScore: 80, color: "orange", timer: 2500, backgroundUrl: "img/pizza.gif", id:6},
 {minScore: 90, color: "red", timer: 2000, backgroundUrl: "img/pixels.gif", id:7}
 ]
-var time = 30;
+var time = 120;
 var didYouWin = true;
 
 
