@@ -12,20 +12,20 @@ var levels = [
 var time = 30;
 var didYouWin = true;
 
-var getTime = function(){
-  $('h2').text("Time: " + time);
-  time--;
-  if(time === 0){
-    didYouWin = false;
-    endLevel(didYouWin);
-    //stop timer
-  }
-}
+// var getTime = function(){
+//   $('h2').text("Time: " + time);
+//   time--;
+//   if(time === 0){
+//     didYouWin = false;
+//     endLevel(didYouWin);
+//     //stop timer
+//   }
+// }
 
 
-var timer = function () {
-  setInterval(getTime, 1000);
-};
+// var timer = function () {
+//   setInterval(getTime, 1000);
+// };
 
 var endLevel = function (didYouWin) {
   //render something depending on win state
